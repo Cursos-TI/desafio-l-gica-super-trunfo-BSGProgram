@@ -160,7 +160,7 @@ int main() {
     //Variaveis e Tipos de dados
 
     int cpopulacao = populacao1 > populacao2;
-    int cpontos = pontot1 > pontot2;
+    int cpontost = pontot1 > pontot2;
     float carea = area1 > area2;
     float cpib = pib1 > pib2;
     float cdens_pop = densidade1 < densidade2;
