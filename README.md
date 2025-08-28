@@ -37,7 +37,7 @@ No nível Aventureiro, você expandirá o sistema para incluir a comparação an
 - **Menu Interativo:** Uso de `switch` para criar um menu que permite ao jogador escolher os atributos a serem comparados.
 - **Exibição de Resultados:** O sistema exibirá o resultado da comparação, indicando qual carta venceu e qual atributo foi utilizado.
 
----
+--
 
 ## 🏅 Nível Mestre
 

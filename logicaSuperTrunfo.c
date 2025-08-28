@@ -182,6 +182,8 @@ int main() {
     //===========================================================
     //Inicio de comparacao (condicoes: verdadeiro if ou falso else)
 
+    printf("INDICE DE COMPARACAO DAS CARTAS\n\n");
+
     if(populacao1 > populacao2) {
         printf("Populacao da carta 1 e maior que populacao da carta 2\n");
     }
@@ -208,6 +210,27 @@ int main() {
     }
     else {
         printf("A area da carta 2 e maior que a area da carta 1\n");
+    }
+
+    if(densidade1 < densidade2){
+        printf("A Dens. Populacional 1 e menor que a Dens. populacional 2\n");
+    }
+    else {
+        printf("A Dens. Populacional 2 e menor que a Dens. populacional 1\n");
+    }
+
+    if (pibpercapita1 > pibpercapita2) {
+        printf("O PIB Percapito 1 e maior que o PIB Percapito 2\n");
+    }
+    else {
+        printf("O PIB Percapito 2 e maior que o PIB Percapito 1\n");
+    }
+
+    if (superpoder1 > superpoder2) {
+        printf("O superpoder 1 e maior que o super poder 2\n");
+    }
+    else {
+        printf("O superpoder 2 e maior que o super poder 1\n");
     }
 
     return 0;
