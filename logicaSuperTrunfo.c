@@ -241,7 +241,7 @@ int main() {
     int opcao, comparar, pontoturistico, populacao, pibpercapita, area, densidade;
     int carta1 = 1;
     int carta2 = 2;
-    char empate [15] = 'Empataram';
+    char empate [20] = 'Empataram';
 
     printf ("\n MENU - COMPARACAO DE ATRIBUTOS\n\n");
 
