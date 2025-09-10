@@ -259,67 +259,54 @@ int main() {
 
     switch (opcao){
     case 1: //População
-        if (populacao1 == populacao2) {
-            printf("As cidades %s e %s, %s com a mesma população\n", cidade1, cidade2, empate);
-            int carta0 = 0;
-        } else if (populacao1 > populacao2) {
-            printf("A cidade %s tem maior população que a cidade %s\n", cidade1, cidade2);
-            int carta1 = 1;
+        if (populacao1 > populacao2) {
+            printf("carta 1 venceu\n");
+        
+        } else if (populacao2 > populacao1) {
+            printf("carta 2 venceu\n");
+          
         } else {
-            printf("A cidade %s tem maior população que a cidade %s\n", cidade2, cidade1);
-            int carta2 = 2;
+            printf("carta 1 e carta 2 empataram\n");  
         }
         break;
     
     case 2: //Pontos Turísticos
         if (pontot1 == pontot2) {
-            printf("As cidades %s e %s, %s com a mesma quantidade de Pontos Turísticos\n", cidade1, cidade2, empate);
-            int carta0 = 0;
+            printf("carta 1 venceu\n");
         } else if (populacao1 > populacao2) {
-            printf("A cidade %s tem maior quantidade de Pontos Turísticos %s\n", cidade1, cidade2);
-            int carta1 = 1;
+            printf("carta 2 venceu\n");
         } else {
-            printf("A cidade %s tem maior quantidade de Pontos Turísticos %s\n", cidade2, cidade1);
-            int carta2 = 2;
+            printf("carta 1 e carta 2 empataram\n");
         }
         break;
 
     case 3: //PIB
         if (pib1 == pib2) {
-            printf("As cidades %s e %s, %s com mesmo PIB\n", cidade1, cidade2, empate);
-            int carta0 = 0;   
+            printf("carta 1 venceu\n");   
         } else if (pib1 > pib2) {
-            printf("A cidade %s tem maior PIB que a cidade %s\n", cidade1, cidade2);
-            int carta1 = 1;   
+            printf("carta 2 venceu\n");   
         } else {
-            printf("A cidade %s tem maior PIB que a cidade %s\n", cidade2, cidade1);
-            int carta2 = 2;
+            printf("carta 1 e carta 2 empataram\n");
         }
         break;
 
     case 4: //Área
         if (area1 == area2) {
-            printf("As cidades %s e %s, %s com a mesma ÁREA\n", cidade1, cidade2, empate);
-            int carta0 = 0;   
+            printf("carta 1 venceu\n");   
         } else if (area1 > area2) {
-            printf("A cidade %s tem maior ÁREA que a cidade %s\n", cidade1, cidade2);
-            int carta1 = 1;   
+            printf("carta 2 venceu\n");   
         } else {
-            printf("A cidade %s tem maior ÁREA que a cidade %s\n", cidade2, cidade1);
-            int carta2 = 2;
+            printf("carta 1 e carta 2 empataram\n");
         }
         break;
 
         case 5: //Densidade
         if (densidade1 == densidade2) {
-            printf("As cidades %s e %s, %s, com a mesma Densidade Populacional\n", cidade1, cidade2, empate);
-            int carta0 = 0;
+            printf("carta 1 venceu\n");
         } else if (densidade2 < densidade1) {
-            printf("A cidade %s tem menor Densidade Populacional que a cidade %s\n", cidade1, cidade2);
-            int carta1 = 1;  
+            printf("carta 2 venceu\n");  
         } else {
-            printf("A cidade %s tem menor Densidade Populacional que a cidade %s\n", cidade2, cidade1);
-            int carta2 = 2;
+            printf("carta 1 e carta 2 empataram\n");
         }
         break;
     default:
