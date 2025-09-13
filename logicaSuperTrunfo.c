@@ -333,7 +333,7 @@ int main() {
         printf("A carta 2 é a vencedora!\n");
     }
     
-
+    }
     return 0;
    
 }
