@@ -333,8 +333,6 @@ int main() {
         printf("A carta 2 é a vencedora!\n");
     }
     
-    
-    //printf("A vencedora foi A CARTA %d\n", carta1, carta2);
 
     return 0;
    
