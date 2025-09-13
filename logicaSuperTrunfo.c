@@ -322,7 +322,7 @@ int main() {
 
     printf("Cidades Escolhidas foram: %s e %s\n", cidade1, cidade2);
     printf("O atributo usado na comparação foi: %d\n", opcao);
-    printf("Os valores do atributo para cada carta foram: %d e %d\n", ((populacao1, populacao2), (densidade1, densidade2), (area1, area2), (pib1, pib2), (pontot1, pontot2)));
+    printf("Os valores do atributo para carta 1 foi '%d' e para carta 2 '%d'\n", ((populacao1, populacao2), (densidade1, densidade2), (area1, area2), (pib1, pib2), (pontot1, pontot2)));
 
     
     if (carta1 == carta2) {
