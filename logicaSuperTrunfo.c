@@ -238,8 +238,7 @@ int main() {
 
     //COMPARACAO DE ATRIBUTOS
 
-    int opcao, comparar, pontoturistico, populacao, pibpercapita, area, densidade;
-    int carta0 = 0;
+    int opcao, comparar, pontoturistico, populacao, pib, area, densidade;
     int carta1 = 1;
     int carta2 = 2;
     char empate[20] = "Empataram";
@@ -259,54 +258,51 @@ int main() {
 
     switch (opcao){
     case 1: //População
-        if (populacao1 > populacao2) {
-            printf("carta 1 venceu\n");
-        
-        } else if (populacao2 > populacao1) {
-            printf("carta 2 venceu\n");
-          
+        if (populacao1 == populacao2) {
+            printf("carta 1 e carta 2 empataram!\n");
+        } else if (populacao1 > populacao2) {
+            printf("carta 1 venceu!\n");
         } else {
-            printf("carta 1 e carta 2 empataram\n");  
+            printf("carta 2 venceu!\n");  
         }
         break;
     
     case 2: //Pontos Turísticos
         if (pontot1 == pontot2) {
-            printf("carta 1 venceu\n");
-        } else if (populacao1 > populacao2) {
-            printf("carta 2 venceu\n");
+            printf("carta 1 e carta 2 empataram!\n");
+        } else if (pontot1 > pontot2) {
+            printf("carta 1 venceu!\n");
         } else {
-            printf("carta 1 e carta 2 empataram\n");
-        }
+            printf("carta 2 venceu!\n");
         break;
 
     case 3: //PIB
         if (pib1 == pib2) {
-            printf("carta 1 venceu\n");   
+            printf("carta 1 e carta 2 empataram!\n");   
         } else if (pib1 > pib2) {
-            printf("carta 2 venceu\n");   
+            printf("carta 1 venceu!\n");   
         } else {
-            printf("carta 1 e carta 2 empataram\n");
+            printf("carta 2 venceu!\n");
         }
         break;
 
     case 4: //Área
         if (area1 == area2) {
-            printf("carta 1 venceu\n");   
+            printf("carta 1 e carta 2 empataram!\n");   
         } else if (area1 > area2) {
-            printf("carta 2 venceu\n");   
+            printf("carta 1 venceu!\n");   
         } else {
-            printf("carta 1 e carta 2 empataram\n");
+            printf("carta 2 venceu!\n");
         }
         break;
 
         case 5: //Densidade
         if (densidade1 == densidade2) {
-            printf("carta 1 venceu\n");
-        } else if (densidade2 < densidade1) {
-            printf("carta 2 venceu\n");  
+            printf("carta 1 e carta 2 empataram!\n");
+        } else if (densidade1 < densidade2) {
+            printf("carta 1 venceu1\n");  
         } else {
-            printf("carta 1 e carta 2 empataram\n");
+            printf("carta 2 venceu!\n");
         }
         break;
     default:
@@ -327,7 +323,7 @@ int main() {
 
     printf("Cidades Escolhidas foram: %s e %s\n", cidade1, cidade2);
     printf("O atributo usado na comparação foi: %d\n", opcao);
-    printf("Os valores do atributo para cada carta foram: %d e %d\n", (populacao1, populacao2), (densidade1, densidade2), (area1, area2), (pib1, pib2), (pontot1, pontot2));
+    printf("Os valores do atributo para cada carta foram: %d e %d\n", ((populacao1, populacao2), (densidade1, densidade2), (area1, area2), (pib1, pib2), (pontot1, pontot2)));
 
     
     if (vencedor == 0){
