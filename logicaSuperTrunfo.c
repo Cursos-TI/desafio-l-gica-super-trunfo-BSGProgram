@@ -240,8 +240,8 @@ int main() {
 
     int opcao, comparar, pontoturistico, populacao, pib, area, densidade;
     int carta1 = 1;
-    int carta2 = 2;
-    char vencedor[20];
+    int carta2 = 0;
+    
     
     //int empate = 0;
     printf ("\nMENU - COMPARACAO DE ATRIBUTOS\n\n");
@@ -322,16 +322,8 @@ int main() {
 
     printf("Cidades Escolhidas foram: %s e %s\n", cidade1, cidade2);
     printf("O atributo usado na comparação foi: %d\n", opcao);
-    printf("Os valores do atributo para carta 1 foi %f e para carta 2 %f\n", ( (float) (populacao1, populacao2), (densidade1, densidade2), (area1, area2), (pib1, pib2), (pontot1, pontot2)));
+    printf("Os valores do atributo para carta 1 foi %f e para carta 2 %f\n", ((populacao1, populacao2), (densidade1, densidade2), (area1, area2), (pib1, pib2), (pontot1, pontot2)));
 
-    
-    if (carta1 == carta2) {
-    printf("Ambos atributos empataram\n");
-    } else if (carta1 > carta2) {
-        printf("A carta 1 é a vencedora!\n");
-    } else {
-        printf("A carta 2 é a vencedora!\n");
-    }
     
     }
     return 0;
