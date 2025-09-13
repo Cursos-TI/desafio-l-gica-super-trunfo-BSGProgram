@@ -241,7 +241,6 @@ int main() {
     int opcao, comparar, pontoturistico, populacao, pib, area, densidade;
     int carta1 = 1;
     int carta2 = 2;
-    char empate[20] = "Empataram";
     char vencedor[20];
     
     //int empate = 0;
@@ -326,17 +325,14 @@ int main() {
     printf("Os valores do atributo para cada carta foram: %d e %d\n", ((populacao1, populacao2), (densidade1, densidade2), (area1, area2), (pib1, pib2), (pontot1, pontot2)));
 
     
-    if (vencedor == 0){
+    if (carta1 == carta2) {
     printf("Ambos atributos empataram\n");
+    } else if (carta1 > carta2) {
+        printf("A carta 1 é a vencedora!\n");
     } else {
-        printf("A carta vencedora foi a carta %d\n", vencedor == 1 ? 1 : 0);
-    } 
-    
-    if (vencedor == 1) {
-        printf("A Carta vencedora foi a carta 1\n");
-    } else {
-        printf("A Carta vencedora foi a carta 2\n");
+        printf("A carta 2 é a vencedora!\n");
     }
+    
     
     //printf("A vencedora foi A CARTA %d\n", carta1, carta2);
 
