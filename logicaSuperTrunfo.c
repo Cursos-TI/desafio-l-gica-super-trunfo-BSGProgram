@@ -238,25 +238,139 @@ int main() {
 
     //COMPARACAO DE ATRIBUTOS
 
-    int opcao, comparar, pontoturistico, populacao, pib, area, densidade;
-    int carta1 = 1;
-    int carta2 = 0;
+    int resultado1, resultado2;
+    char primeiroAtributo, segundoAtributo = 1;
+    int populacao1, populacao2, pontot1, pontot2, pib1, pib2, area1, area2, densidade1, densidade2;
+
+    srand (time(0)); //Gera um numero aleatorio
+    populacao1 = 1;
+    populacao2 = 0;
+    pontot1 = 1;
+    pontot2 = 0;
+    pib1 = 1;
+    pib2 = 0;
+    area1 = 1;
+    area2 = 0;
+    densidade1 = 0;
+    densidade2 = 1;
     
     
-    //int empate = 0;
-    printf ("\nMENU - COMPARACAO DE ATRIBUTOS\n\n");
+   
+    printf ("\n###JOGO SUPER TRUNFO###\n\n");
+    printf("Escolha o primeiro atributo para comparar\n");
+    
+    printf("P - População\n");
+    printf("T - Pontos Turísticos\n");
+    printf("B - PIB\n");
+    printf("A - Área\n");
+    printf("D - Densidade Populacional\n");
 
-    printf("1 - População\n");
-    printf("2 - Pontos Turísticos\n");
-    printf("3 - PIB\n");
-    printf("4 - Área\n");
-    printf("5 - Densidade Populacional\n");
+    printf("O primeiro atributo escolhido foi: \n");
+    scanf(" %c", &primeiroAtributo);
 
-    printf("Escolha um atributo para comparar (1-5): ");
-    scanf("%d", &opcao);
+    switch (primeiroAtributo) {
 
-    switch (opcao){
-    case 1: //População
+    case 'P':
+    case 'p':
+            printf("Você escolheu o atributo População\n");
+        resultado1 = populacao1 > populacao2 ? 1 : 0;
+        break;
+
+    case 'T':
+    case 't':
+            printf("Você escolheu o atributo Pontos Turísticos\n");
+        resultado1 = pontot1 > pontot2 ? 1 : 0;
+        break;
+
+    case 'B':
+    case 'b':
+            printf("Você escolheu o atributo PIB\n");
+        resultado1 = pib1 > pib2 ? 1 : 0;
+        break;
+
+    case 'A':
+    case 'a':
+            printf("Você escolheu o atributo Área\n");
+        resultado1 = area1 > area2 ? 1 : 0;
+        break;
+
+    case 'D':
+    case 'd':
+            printf("Você escolheu o atributo Densidade\n");
+        resultado1 = densidade2 > densidade1 ? 1 : 0;
+        break;
+
+    default:
+            printf("opção Inválida!");
+        break;
+    }
+        
+    printf("Escolha o segundo atributo para comparar\n");
+    
+    printf("P - População\n");
+    printf("T - Pontos Turísticos\n");
+    printf("B - PIB\n");
+    printf("A - Área\n");
+    printf("D - Densidade Populacional\n");
+
+    printf("O segundo atributo escolhido foi: ");
+    scanf(" %c", &segundoAtributo);
+
+    if(primeiroAtributo == segundoAtributo) {
+        printf("Você escolheu o mesmo atributo, por favor, escolha um atributo diferente do primeiro\n");
+    } else {
+
+        switch (segundoAtributo) {
+    
+    case 'P':
+    case 'p':
+            printf("Você escolheu o atributo População\n");
+        resultado2 = populacao1 > populacao2 ? 1 : 0;
+        break;
+
+    case 'T':
+    case 't':
+            printf("Você escolheu o atributo Pontos Turísticos\n");
+        resultado2 = pontot1 > pontot2 ? 1 : 0;
+        break;
+
+    case 'B':
+    case 'b':
+            printf("Você escolheu o atributo PIB\n");
+        resultado2 = pib1 > pib2 ? 1 : 0;
+        break;
+
+    case 'A':
+    case 'a':
+            printf("Você escolheu o atributo Área\n");
+        resultado2 = area1 > area2 ? 1 : 0;
+        break;
+
+    case 'D':
+    case 'd':
+            printf("Você escolheu o atributo Densidade\n");
+        resultado2 = densidade2 > densidade1 ? 1 : 0;
+        break;
+
+    default:
+            printf("opção Inválida!");
+        break;
+    }
+
+    if (resultado1 && resultado2) {
+        printf ("Carta 1 Venceu!\n");
+    } else if("resultado1 != resultado2") {
+        printf ("Carta 1 e Carta 2 Empataram!\n");
+    } else {
+        printf("Carta 2 Venceu!\n");
+    }
+
+        return 0;
+    }
+
+
+
+    /*case 1: //População
         if (populacao1 == populacao2) {
             printf("carta 1 e carta 2 empataram!\n");
         } else if (populacao1 > populacao2) {
@@ -308,6 +422,13 @@ int main() {
         printf("Opção inválida");
         break;
     }
+
+    if(vencedor == 1){
+        printf("Carta 1 venceu!\n");
+    } else if (vencedor == 0){
+        printf("Carta 2 venceu!\n");
+    } else {
+        printf("Empate!\n");
     
 
 
@@ -327,5 +448,5 @@ int main() {
     
     }
     return 0;
-   
+   */
 }
