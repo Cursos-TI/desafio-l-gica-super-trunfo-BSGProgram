@@ -355,9 +355,15 @@ int main() {
         break;
 
     default:
-            printf("opção Inválida!");
+            printf("opção Inválida!\n\n");
         break;
     }
+
+    printf("\nResultado Final das Comparações\n\n");
+
+    printf("Cidades Escolhidas foram: %s e %s\n", cidade1, cidade2);
+    printf("Os atributo usados na comparação foi: %d e %d\n", primeiroAtributo, segundoAtributo);
+    printf("Os valores do atributo para carta 1 foi %f e para carta 2 %f\n", ((populacao1, populacao2), (densidade1, densidade2), (area1, area2), (pib1, pib2), (pontot1, pontot2)));
 
     if (resultado1 && resultado2) {
         printf ("Carta 1 Venceu!\n");
