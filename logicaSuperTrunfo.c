@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 
 // Desafio Super Trunfo - Países
 // Tema 2 - Comparação das Cartas
@@ -239,8 +241,8 @@ int main() {
     //COMPARACAO DE ATRIBUTOS
 
     int resultado1, resultado2;
-    char primeiroAtributo, segundoAtributo = 1;
-    int populacao1, populacao2, pontot1, pontot2, pib1, pib2, area1, area2, densidade1, densidade2;
+    char primeiroAtributo, segundoAtributo;
+    //int populacao1, populacao2, pontot1, pontot2, pib1, pib2, area1, area2, densidade1, densidade2;
 
     srand (time(0)); //Gera um numero aleatorio
     populacao1 = 1;
