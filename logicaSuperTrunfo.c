@@ -327,31 +327,31 @@ int main() {
     case 'P':
     case 'p':
             printf("Você escolheu o atributo População\n");
-        resultado2 = populacao1 > populacao2 ? 1 : 0;
+        resultado1 = populacao1 > populacao2 ? 1 : 0;
         break;
 
     case 'T':
     case 't':
             printf("Você escolheu o atributo Pontos Turísticos\n");
-        resultado2 = pontot1 > pontot2 ? 1 : 0;
+        resultado1 = pontot1 > pontot2 ? 1 : 0;
         break;
 
     case 'B':
     case 'b':
             printf("Você escolheu o atributo PIB\n");
-        resultado2 = pib1 > pib2 ? 1 : 0;
+        resultado1 = pib1 > pib2 ? 1 : 0;
         break;
 
     case 'A':
     case 'a':
             printf("Você escolheu o atributo Área\n");
-        resultado2 = area1 > area2 ? 1 : 0;
+        resultado1 = area1 > area2 ? 1 : 0;
         break;
 
     case 'D':
     case 'd':
             printf("Você escolheu o atributo Densidade\n");
-        resultado2 = densidade2 > densidade1 ? 1 : 0;
+        resultado1 = densidade2 > densidade1 ? 1 : 0;
         break;
 
     default:
